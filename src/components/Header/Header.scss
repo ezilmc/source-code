@@ -1,0 +1,83 @@
+#header {
+  padding: 30px 0;
+  height: 130px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+}
+.inner-page {
+  position: unset !important;
+  background-color: #1a212d;
+}
+#header .navbar{
+  padding: 0rem 1rem;
+}
+#header .navbar-brand {
+  padding-top: 0px;
+}
+#header.header-scrolled {
+  background: rgba(71, 158, 177, 0.4);
+  padding: 20px 0;
+  height: 110px;
+  transition: all 0.5s;
+}
+
+#header #logo {
+  float: left;
+}
+
+#header #logo h1 {
+  font-size: 34px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+#header #logo h1 a,
+#header #logo h1 a:hover {
+  color: #fff;
+  padding-left: 10px;
+  border-left: 4px solid #18d26e;
+}
+
+#header #logo img {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-nav .nav-item a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+
+}
+.inner-page .navbar-nav .nav-item a {
+  color: rgb(152, 152, 152);
+}
+.navbar-nav .nav-item a:hover, .navbar-nav .nav-item.active a {
+  color: #FFF !important;
+  
+}
+
+.navbar-nav .nav-item .btn {
+   padding: 8px 25px !important;
+  font-weight: bold;
+  border-radius: 2rem;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  margin-top: -2px;
+}
+.navbar-collapse.show {
+  background-color: rgba(71, 158, 177, 0.4);
+}
+.navbar-collapse.show ul li {
+  padding-left: 20px;
+}

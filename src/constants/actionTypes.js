@@ -1,0 +1,15 @@
+export const APP_LOAD = 'APP_LOAD';
+export const REDIRECT = 'REDIRECT';
+export const API_ERRORED = 'API_ERRORED';
+
+export const GET_COURSES = 'GET_COURSES';
+export const COURSES_RECEIVED = 'COURSES_RECEIVED';
+export const COURSES_PAGE_UNLOADED = 'COURSES_PAGE_UNLOADED';
+
+export const GET_COURSE = 'GET_COURSE';
+export const COURSE_RECEIVED = 'COURSE_RECEIVED';
+export const COURSE_PAGE_UNLOADED = 'COURSE_PAGE_UNLOADED';
+
+export const GET_USER = 'GET_USER';
+export const USER_RECEIVED = 'USER_RECEIVED';
+export const USER_PAGE_UNLOADED = 'USER_PAGE_UNLOADED';

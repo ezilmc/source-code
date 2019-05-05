@@ -1,0 +1,71 @@
+{
+  "totalCourses": 6,
+  "courses": [
+    {
+      "id": 1,
+      "title": "Arabic",
+      "highlights": 
+        {
+          "levels": 11,
+          "units": 225,
+          "excercises": 500
+        }
+      
+    },
+    {
+      "id": 2,
+      "title": "Islamic Studies",
+      "highlights": 
+        {
+          "levels": 5,
+          "units": 200,
+          "excercises": 400
+        }
+      
+    },
+    {
+      "id": 3,
+      "title": "Tajweed",
+      "highlights": 
+        {
+          "levels": 10,
+          "units": 16,
+          "excercises": 200
+        }
+      
+    },
+    {
+      "id": 4,
+      "title": "Tafseer",
+      "highlights": 
+        {
+          "levels": 11,
+          "units": 225,
+          "excercises": 500
+        }
+      
+    },
+    {
+      "id": 5,
+      "title": "Seerah",
+      "highlights": 
+        {
+          "levels": 11,
+          "units": 225,
+          "excercises": 500
+        }
+      
+    },
+    {
+      "id": 6,
+      "title": "Hadith",
+      "highlights": 
+        {
+          "levels": 11,
+          "units": 225,
+          "excercises": 500
+        }
+      
+    }
+  ]
+}
