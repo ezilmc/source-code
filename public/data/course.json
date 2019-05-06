@@ -1,0 +1,347 @@
+{
+  "totalCourses": 6,
+  "courses": [
+    {
+      "id": 1,
+      "title": "Arabic",
+      "highlights": {
+        "levels": 11,
+        "units": 225,
+        "excercises": 500
+      },
+      "img": "icon_arabic.png",
+      "levels": [
+        {
+          "id": 1,
+          "name": "Level 1",
+          "levelCode": "L1"
+        },
+        {
+          "id": 2,
+          "name": "Level 2",
+          "levelCode": "L2"
+        },
+        {
+          "id": 3,
+          "name": "Level 3",
+          "levelCode": "L3"
+        },
+        {
+          "id": 4,
+          "name": "Level 4",
+          "levelCode": "L4"
+        },
+        {
+          "id": 5,
+          "name": "Level 5",
+          "levelCode": "L5"
+        },
+        {
+          "id": 6,
+          "name": "Level 6",
+          "levelCode": "L6"
+        },
+        {
+          "id": 7,
+          "name": "Level 7",
+          "levelCode": "L7"
+        },
+        {
+          "id": 8,
+          "name": "Level 8",
+          "levelCode": "L8"
+        },
+        {
+          "id": 9,
+          "name": "Level 9",
+          "levelCode": "L9"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Islamic Studies",
+      "highlights": {
+        "levels": 5,
+        "units": 200,
+        "excercises": 400
+      },
+      "img": "icon_islamicstudy.png",
+      "levels": [
+        {
+          "id": 1,
+          "name": "Level 1",
+          "levelCode": "L1"
+        },
+        {
+          "id": 2,
+          "name": "Level 2",
+          "levelCode": "L2"
+        },
+        {
+          "id": 3,
+          "name": "Level 3",
+          "levelCode": "L3"
+        },
+        {
+          "id": 4,
+          "name": "Level 4",
+          "levelCode": "L4"
+        },
+        {
+          "id": 5,
+          "name": "Level 5",
+          "levelCode": "L5"
+        },
+        {
+          "id": 6,
+          "name": "Level 6",
+          "levelCode": "L6"
+        },
+        {
+          "id": 7,
+          "name": "Level 7",
+          "levelCode": "L7"
+        },
+        {
+          "id": 8,
+          "name": "Level 8",
+          "levelCode": "L8"
+        },
+        {
+          "id": 9,
+          "name": "Level 9",
+          "levelCode": "L9"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Tajweed",
+      "highlights": {
+        "levels": 10,
+        "units": 16,
+        "excercises": 200
+      },
+      "img": "icon_tajweed.png",
+      "levels": [
+        {
+          "id": 1,
+          "name": "Level 1",
+          "levelCode": "L1"
+        },
+        {
+          "id": 2,
+          "name": "Level 2",
+          "levelCode": "L2"
+        },
+        {
+          "id": 3,
+          "name": "Level 3",
+          "levelCode": "L3"
+        },
+        {
+          "id": 4,
+          "name": "Level 4",
+          "levelCode": "L4"
+        },
+        {
+          "id": 5,
+          "name": "Level 5",
+          "levelCode": "L5"
+        },
+        {
+          "id": 6,
+          "name": "Level 6",
+          "levelCode": "L6"
+        },
+        {
+          "id": 7,
+          "name": "Level 7",
+          "levelCode": "L7"
+        },
+        {
+          "id": 8,
+          "name": "Level 8",
+          "levelCode": "L8"
+        },
+        {
+          "id": 9,
+          "name": "Level 9",
+          "levelCode": "L9"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Tafseer",
+      "highlights": {
+        "levels": 11,
+        "units": 225,
+        "excercises": 500
+      },
+      "img": "icon_tafseer.png",
+      "levels": [
+        {
+          "id": 1,
+          "name": "Level 1",
+          "levelCode": "L1"
+        },
+        {
+          "id": 2,
+          "name": "Level 2",
+          "levelCode": "L2"
+        },
+        {
+          "id": 3,
+          "name": "Level 3",
+          "levelCode": "L3"
+        },
+        {
+          "id": 4,
+          "name": "Level 4",
+          "levelCode": "L4"
+        },
+        {
+          "id": 5,
+          "name": "Level 5",
+          "levelCode": "L5"
+        },
+        {
+          "id": 6,
+          "name": "Level 6",
+          "levelCode": "L6"
+        },
+        {
+          "id": 7,
+          "name": "Level 7",
+          "levelCode": "L7"
+        },
+        {
+          "id": 8,
+          "name": "Level 8",
+          "levelCode": "L8"
+        },
+        {
+          "id": 9,
+          "name": "Level 9",
+          "levelCode": "L9"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Seerah",
+      "highlights": {
+        "levels": 11,
+        "units": 225,
+        "excercises": 500
+      },
+      "img": "icon_search.png",
+      "levels": [
+        {
+          "id": 1,
+          "name": "Level 1",
+          "levelCode": "L1"
+        },
+        {
+          "id": 2,
+          "name": "Level 2",
+          "levelCode": "L2"
+        },
+        {
+          "id": 3,
+          "name": "Level 3",
+          "levelCode": "L3"
+        },
+        {
+          "id": 4,
+          "name": "Level 4",
+          "levelCode": "L4"
+        },
+        {
+          "id": 5,
+          "name": "Level 5",
+          "levelCode": "L5"
+        },
+        {
+          "id": 6,
+          "name": "Level 6",
+          "levelCode": "L6"
+        },
+        {
+          "id": 7,
+          "name": "Level 7",
+          "levelCode": "L7"
+        },
+        {
+          "id": 8,
+          "name": "Level 8",
+          "levelCode": "L8"
+        },
+        {
+          "id": 9,
+          "name": "Level 9",
+          "levelCode": "L9"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Hadith",
+      "highlights": {
+        "levels": 11,
+        "units": 225,
+        "excercises": 500
+      },
+      "img": "icon_hadith.png",
+      "levels": [
+        {
+          "id": 1,
+          "name": "Level 1",
+          "levelCode": "L1"
+        },
+        {
+          "id": 2,
+          "name": "Level 2",
+          "levelCode": "L2"
+        },
+        {
+          "id": 3,
+          "name": "Level 3",
+          "levelCode": "L3"
+        },
+        {
+          "id": 4,
+          "name": "Level 4",
+          "levelCode": "L4"
+        },
+        {
+          "id": 5,
+          "name": "Level 5",
+          "levelCode": "L5"
+        },
+        {
+          "id": 6,
+          "name": "Level 6",
+          "levelCode": "L6"
+        },
+        {
+          "id": 7,
+          "name": "Level 7",
+          "levelCode": "L7"
+        },
+        {
+          "id": 8,
+          "name": "Level 8",
+          "levelCode": "L8"
+        },
+        {
+          "id": 9,
+          "name": "Level 9",
+          "levelCode": "L9"
+        }
+      ]
+    }
+  ]
+}

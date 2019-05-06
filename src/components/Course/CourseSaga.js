@@ -26,8 +26,9 @@ function* getCourses() {
 }
 
 function* getCourse(action) {
+    console.log('Course here');
     try {
-        const payload = yield axios.get(`${process.env.REACT_APP_API_ROOT}/posts/${action.payload}`)
+        const payload = yield axios.get(`${process.env.REACT_APP_API_ROOT}/course.json`)
             .then(response => response.data);
         yield put({ type: COURSE_RECEIVED, payload});
     }catch (e) {

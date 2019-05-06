@@ -1,11 +1,17 @@
 import {
     GET_COURSES,
     COURSES_RECEIVED,
-    COURSES_PAGE_UNLOADED
+    COURSES_PAGE_UNLOADED,
+    SHOW_COURSE_DETAILS,
+    HIDE_COURSE_DETAILS,
+    COURSE_NAV_TOGGLED
 } from '../../constants/actionTypes';
 
 const initialState = {
-    courses: {}
+    courses: {},
+    selectedCourseId: null,
+    isModalOpen: false,
+    isCourseNavExpanded: false
 };
 
 export default (state = initialState, action) => {
@@ -23,6 +29,19 @@ export default (state = initialState, action) => {
             };
         case COURSES_PAGE_UNLOADED:
             return {};
+        case SHOW_COURSE_DETAILS:
+            return {
+                ...state,
+                selectedCourseId: action.payload,
+                isModalOpen: true
+            };
+        case HIDE_COURSE_DETAILS:
+            return {
+                ...state,
+                selectedCourseId: null,
+                isModalOpen: false
+            };
+        
         default:
             return state;
     }

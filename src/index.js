@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import store from './store';
 
 import 'bootstrap/dist/css/bootstrap.css';
+import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
