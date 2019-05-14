@@ -9,6 +9,7 @@ import {
 
 } from '../../constants/actionTypes';
 import Loading from '../Commons/Loading';
+import CourseLevelWiseUnits from './CourseLevelWiseUnits';
 
 const mapStateToProps = state => ({
     courseDetails: state.courseDetails
@@ -53,7 +54,8 @@ class CourseDetails extends Component {
             return (
                 <NavItem key={level.id} eventKey={level.levelCode}>
                     <NavIcon>
-                        <i className="fa fa-fw fa-home" style={{ fontSize: '1.75em' }} />
+                        
+                        <button type="button" className="btn btn-default btn-circle">{level.levelCode}</button>
                     </NavIcon>
                     <NavText>
                         {level.name}
@@ -80,7 +82,27 @@ class CourseDetails extends Component {
                     </SideNav.Nav>
                 </SideNav>
 
-                <div className={`course-content ${isCourseNavExpanded ? 'expanded' : ''}`}>Main Contant...</div>
+                <div className={`course-content ${isCourseNavExpanded ? 'expanded' : ''}`}>
+                    <div className="course-content-header">
+                        <div className="course-img">
+                            <img src={require('../../assets/img/'+selectedCourse.img)} alt="" title="" />
+                        </div>
+                        <div className="course-title">
+                            <p>{selectedCourse.title}</p>
+                            <p>{selectedCourse.highlights.levels} Levels, {selectedCourse.highlights.units} Units and {selectedCourse.highlights.excercises} Excercises</p>
+                        </div>
+                        <div className="flex-grow"></div>
+                        <div className="course-actions">
+                            <span className="btn btn-default btn-circle"><i className="fa fa-question" aria-hidden="true"></i></span>
+                            <span className="btn btn-default btn-circle"><i className="fa fa-cog" aria-hidden="true"></i></span>
+                            <span><i className="fa fa-times" aria-hidden="true"></i></span>
+                        </div>
+                    </div>
+                    
+                    <CourseLevelWiseUnits selectedCourse={selectedCourse}/>
+
+                    
+                </div>
             </React.Fragment>
 
         );

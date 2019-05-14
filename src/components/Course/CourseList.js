@@ -47,6 +47,9 @@ class CourseList extends Component {
         
         this.props.showCourse(courseId);
     }
+    toggle() {
+
+    }
     render() {
         let isMenuExpanded = false;
         if(!this.props.courses.courses.courses || this.props.courses.loading) {
@@ -85,7 +88,7 @@ class CourseList extends Component {
                     {rows}
                 </div>
                 
-                <Modal isOpen={isModalOpen} >
+                <Modal isOpen={isModalOpen} className={this.props.className} toggle={this.toggle}>
                 
                 <ModalBody>
                     

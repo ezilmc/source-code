@@ -56,6 +56,34 @@
 .sidenav---sidenav-nav---3tvij > .sidenav---sidenav-navitem---uwIJ- > .sidenav---navitem---9uL5T .sidenav---navicon---3gCRo > *, .sidenav---sidenav-nav---3tvij > .sidenav---sidenav-navitem---uwIJ- > .sidenav---navitem---9uL5T .sidenav---navtext---1AE_f > * {
   color: #000 !important;
 }
+.btn-circle {
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+  background-color: #FFF;
+  border: 1px solid #e9e9e9;
+}
+.sidenav---sidenav---_2tBP {
+  background: #FFF;
+  top: 5px;
+  position: unset;
+  
+}
+.sidenav---sidenav-toggle---1KRjR .sidenav---icon-bar---u1f02 {
+  background-color: #000;
+}
+
+.sidenav---sidenav-nav---3tvij {
+  width: unset;
+  margin-left: -15px;
+}
+.sidenav---sidenav-toggle---1KRjR {
+  margin-left: -15px;
+}
 .course-content {
   position: relative;
   overflow: hidden;
@@ -72,3 +100,41 @@
   padding: 0 20px;
   margin-left: 240px;
  }
+ .course-content-header {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap
+ }
+ .course-content-header .course-title {
+   margin-left: 10px;
+   padding-top: 9px;
+ }
+ .course-content-header .course-title p {
+    margin-bottom: 0px;
+ }
+ .course-content-header .course-title p:first-child {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 28px;
+    
+ }
+ .course-content-header .course-title p:last-child {
+    font-size: 16px;
+    color: #d2d2d2;
+ }
+ .course-content-header .flex-grow{
+    flex-grow: 1;
+ }
+ .course-content-header .course-actions span{
+   margin: 10px;
+ }
+ @media (min-width: 576px)
+  {
+    .modal-dialog {
+      max-width: 90%;
+      margin: 1.75rem auto;
+    }
+  }
+
+ 
+ 
