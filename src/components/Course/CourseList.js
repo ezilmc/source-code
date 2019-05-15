@@ -8,7 +8,8 @@ import {
     COURSES_RECEIVED,
     COURSES_PAGE_UNLOADED,
     SHOW_COURSE_DETAILS,
-    COURSE_NAV_TOGGLED
+    COURSE_NAV_TOGGLED,
+    CLOSE_MODAL
     
 } from '../../constants/actionTypes';
 import Loading from '../Commons/Loading';
@@ -27,13 +28,16 @@ const mapDispatchToProps = dispatch => ({
     showCourse: payload =>
         dispatch({ type: SHOW_COURSE_DETAILS, payload }),
     courseNavToggled: payload =>
-        dispatch({ type: COURSE_NAV_TOGGLED, payload })
+        dispatch({ type: COURSE_NAV_TOGGLED, payload }),
+    closeModal: payload =>
+        dispatch({ type: CLOSE_MODAL, payload })
 });
 
 class CourseList extends Component {
     constructor(props) {
         super(props);
         this.showCourse = this.showCourse.bind(this);
+        this.closeModal = this.closeModal.bind(this);
     }
 
     componentDidMount() {
@@ -49,6 +53,10 @@ class CourseList extends Component {
     }
     toggle() {
 
+    }
+    closeModal() {
+        console.log('Closed');
+        this.props.closeModal();
     }
     render() {
         let isMenuExpanded = false;
@@ -91,8 +99,8 @@ class CourseList extends Component {
                 <Modal isOpen={isModalOpen} className={this.props.className} toggle={this.toggle}>
                 
                 <ModalBody>
+                    {selectedCourseId?<CourseDetails selectedCourseId={selectedCourseId} onCloseModal={this.closeModal} />:null}
                     
-                    <CourseDetails selectedCourseId={selectedCourseId} />
                 </ModalBody>
                 {/*<ModalFooter>
                     <Button color="primary" onClick={this.toggle}>Do Something</Button>{' '}

@@ -5,7 +5,8 @@ import {
     GET_COURSE,
     COURSE_RECEIVED,
     COURSE_PAGE_UNLOADED,
-    COURSE_NAV_TOGGLED
+    COURSE_NAV_TOGGLED,
+    GET_COURSE_UNITS
 
 } from '../../constants/actionTypes';
 import Loading from '../Commons/Loading';
@@ -21,7 +22,9 @@ const mapDispatchToProps = dispatch => ({
     onUnload: () => 
         dispatch({ type: COURSE_PAGE_UNLOADED}),
     courseNavToggled: payload =>
-        dispatch({ type: COURSE_NAV_TOGGLED, payload })
+        dispatch({ type: COURSE_NAV_TOGGLED, payload }),
+    getCourseUnitsByLevel: payload =>
+        dispatch({ type: GET_COURSE_UNITS, payload })
     
 });
 
@@ -33,10 +36,14 @@ class CourseDetails extends Component {
     }
     componentDidMount() {
         this.props.getCourse();
+        this.props.getCourseUnitsByLevel();
     }
 
     componentWillUnmount() {
         this.props.onUnload();
+    }
+    showUnits(level) {
+        this.props.getCourseUnitsByLevel(level);
     }
     render() {
         
@@ -50,12 +57,13 @@ class CourseDetails extends Component {
         
         const isCourseNavExpanded = this.props.courseDetails.isCourseNavExpanded;
 
+        let selectedLevel = '';
+
         const levels = selectedCourse.levels.map((level) => {
             return (
                 <NavItem key={level.id} eventKey={level.levelCode}>
                     <NavIcon>
-                        
-                        <button type="button" className="btn btn-default btn-circle">{level.levelCode}</button>
+                        <button type="button" className={`btn btn-default btn-circle ${this.props.courseDetails.selectedLevel.levelCode == level.levelCode ? 'active' : ''}`} onClick={this.showUnits.bind(this, level)}>{level.levelCode}</button>
                     </NavIcon>
                     <NavText>
                         {level.name}
@@ -69,7 +77,8 @@ class CourseDetails extends Component {
             <React.Fragment>
                 <SideNav
                     onSelect={(selected) => {
-
+                        console.log('Selected here '+selected);
+                        
                     }}
                     onToggle={(isToggled) => {
                         this.props.courseNavToggled(isToggled);
@@ -77,7 +86,6 @@ class CourseDetails extends Component {
                 >
                     <SideNav.Toggle />
                     <SideNav.Nav >
-
                         {levels}
                     </SideNav.Nav>
                 </SideNav>
@@ -95,12 +103,18 @@ class CourseDetails extends Component {
                         <div className="course-actions">
                             <span className="btn btn-default btn-circle"><i className="fa fa-question" aria-hidden="true"></i></span>
                             <span className="btn btn-default btn-circle"><i className="fa fa-cog" aria-hidden="true"></i></span>
-                            <span><i className="fa fa-times" aria-hidden="true"></i></span>
+                            <span onClick={this.props.onCloseModal}><i className="fa fa-times" aria-hidden="true"></i></span>
                         </div>
                     </div>
+                    <p><b>{this.props.courseDetails.selectedLevel?this.props.courseDetails.selectedLevel.name:''}</b></p>
+                    <div className="course-units">
+                        {
+                            this.props.courseDetails.units.length <= 0 || this.props.courseDetails.loading ?   
+                                
+                                    <Loading loading={this.props.courseDetails.loading} /> : <CourseLevelWiseUnits units={this.props.courseDetails.units} />
+                        }
                     
-                    <CourseLevelWiseUnits selectedCourse={selectedCourse}/>
-
+                   </div>
                     
                 </div>
             </React.Fragment>

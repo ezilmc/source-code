@@ -54,8 +54,19 @@
   
 }
 .sidenav---sidenav-nav---3tvij > .sidenav---sidenav-navitem---uwIJ- > .sidenav---navitem---9uL5T .sidenav---navicon---3gCRo > *, .sidenav---sidenav-nav---3tvij > .sidenav---sidenav-navitem---uwIJ- > .sidenav---navitem---9uL5T .sidenav---navtext---1AE_f > * {
-  color: #000 !important;
+   color: #000;
+   font-weight: bold;
 }
+
+.sidenav---sidenav-nav---3tvij > .sidenav---sidenav-navitem---uwIJ- > .sidenav---navitem---9uL5T .sidenav---navicon---3gCRo .btn-circle:hover {
+  color: #000;
+  font-weight: bold;
+}
+.sidenav---sidenav-nav---3tvij > .sidenav---sidenav-navitem---uwIJ- > .sidenav---navitem---9uL5T .sidenav---navtext---1AE_f, .sidenav---sidenav-nav---3tvij > .sidenav---sidenav-navitem---uwIJ- > .sidenav---navitem---9uL5T .sidenav---navtext---1AE_f:hover {
+  color: #000;
+  font-weight: bold;
+}
+
 .btn-circle {
   width: 32px;
   height: 32px;
@@ -66,6 +77,14 @@
   border-radius: 15px;
   background-color: #FFF;
   border: 1px solid #e9e9e9;
+}
+.btn-circle:hover {
+  color: #000;
+}
+
+.btn-circle.active {
+  background-image: linear-gradient(to right, #5bab04 0%, #6bbf72 51%, #6bbf72 100%);
+  color: #ffffff !important;
 }
 .sidenav---sidenav---_2tBP {
   background: #FFF;
@@ -127,14 +146,66 @@
  }
  .course-content-header .course-actions span{
    margin: 10px;
+   cursor: pointer;
  }
  @media (min-width: 576px)
   {
+    
+  }
+  .course-units .row .unit {
+    padding-bottom: 20px;
+  }
+  @media ( min-width: 768px ) {
     .modal-dialog {
-      max-width: 90%;
+      max-width: 80%;
       margin: 1.75rem auto;
     }
+    .course-units .row .unit:first-child {
+      border-right: 1px solid #f2f2f2;
+    }
+    .course-units .row .unit:last-child {
+      padding-left: 40px;
+    }
+    
+}
+  .course-units .row .unit:after {
+    background: #f2f2f2 none repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 1px;
+    margin-top: 15px;
+    margin-bottom: 3.3rem;
+    width: 92%;
+    margin:auto
   }
+  .course-units .row:last-child .unit:after {
+    background: unset;
+    content: "";
+  }
+  .course-units .row .unit p {
+    margin-bottom: 5px;
+  }
+  .course-units .row .unit p:last-child {
+    margin-bottom: 20px;
+  }
+  
+  .course-units .row .unit .unitCode {
+    color: #33da33;
+    font-weight: bold;
+  }
+  .course-units .row .unit .unitLevel {
+    color: #e0dddd;
+    
+  }
+  .sub-unit {
+    padding-left: 20px;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  .sub-unit .unitCode {
+    margin-right: 10px;
+  }
+  
 
  
  

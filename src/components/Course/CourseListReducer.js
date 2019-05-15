@@ -4,7 +4,8 @@ import {
     COURSES_PAGE_UNLOADED,
     SHOW_COURSE_DETAILS,
     HIDE_COURSE_DETAILS,
-    COURSE_NAV_TOGGLED
+    COURSE_NAV_TOGGLED,
+    CLOSE_MODAL
 } from '../../constants/actionTypes';
 
 const initialState = {
@@ -34,6 +35,12 @@ export default (state = initialState, action) => {
                 ...state,
                 selectedCourseId: action.payload,
                 isModalOpen: true
+            };
+        case CLOSE_MODAL:
+            return {
+                ...state,
+                selectedCourseId: null,
+                isModalOpen: false
             };
         case HIDE_COURSE_DETAILS:
             return {
